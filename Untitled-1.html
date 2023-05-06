@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Viewer</title>
+    <link rel="stylesheet" href="Untitled-1.css"/>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+            display: block;
+            overflow: hidden;
+        }
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer src="inalabiskand_outline_03.gltf" camera-controls camera-orbit="-30deg 70deg 20m" auto-rotate></model-viewer>
+    <canvas id="myCanvas"></canvas>
+
+    <header>
+        <div class="logo-title">
+            <h2>inalab.</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
